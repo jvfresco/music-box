@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This application uses the Soundcloud API to retrieve songs and allows the user to play them.<br />
 My goal with this project was to create a web application using React + Redux to control a global state and manage streamable media content reproduction. <br />
-
+The application implements a custom web player, that can be operated from each individual song or with the global web controls 
 - React
 - Redux
 - Functional components, hooks and custom hooks
