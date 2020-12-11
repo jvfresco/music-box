@@ -1,0 +1,40 @@
+@import '../../variables.scss';
+@import '../../mixings.scss';
+
+.Logo {
+  float:left;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  &Text {
+    font-size: 2.8rem;
+    margin: 2rem 0;
+    border-bottom: 1px solid $light-primary;
+    display: none;
+    color: $light-secondary-dark;
+    &.DarkMode {
+      color: $dark-secondary-light;
+      border-bottom: 1px solid $dark-primary-light;
+    }
+  }
+}
+
+.LogoImg {
+  height: 4rem;
+  filter: $filter-light-secondary-dark;
+
+  &.DarkMode {
+    filter: $filter-dark-secondary-light;
+  }
+
+}
+
+@include respond(phone){
+  .Logo{
+    display: none;
+  }
+  .LogoText {
+    display: block;
+  }
+}

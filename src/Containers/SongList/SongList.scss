@@ -1,0 +1,59 @@
+@import '../../variables.scss';
+@import '../../mixings.scss';
+
+.SongList {
+  background-color:  $light-primary-dark;
+  padding-top: 10rem;
+  min-height: 100vh;
+}
+
+.SongList.DarkMode {
+  background-color: $dark-primary-light;
+}
+
+.SongCollection {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  justify-content: left;
+  margin:auto;
+  padding: 0px;
+  max-width: 100rem;
+  background-color:  $light-primary-dark-2;
+  padding: 1rem;
+  padding-bottom: 7rem;  
+}
+
+.SongCollection.DarkMode {
+  background-color: $dark-primary-light-2;
+}
+
+
+.Card {
+    width: 100%;
+    opacity: 0;
+}
+
+@media (min-width: 400px){
+  .Card {
+    width: 85%
+  }
+}
+
+@media (min-width: 500px){
+  .Card {
+    width: 50%
+  }
+}
+
+@media (min-width: 750px){
+  .Card {
+    width: 33%
+  }
+}
+
+@media (min-width: 1000px){
+  .Card {
+    width: 25%
+  }
+}

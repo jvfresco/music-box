@@ -1,0 +1,35 @@
+@import '../../../../variables.scss';
+@import '../../../../mixings.scss';
+
+// .Search {
+//   text-align: center;
+//   position: relative;
+//   max-width: 100rem;
+//   margin: auto;
+
+// }
+
+.SearchInput {
+  width: 100%;
+  border: none;
+  background: none;
+  height: 3rem;
+  margin-top: 0.8rem;
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: $light-secondary-dark;
+  border-bottom: .1rem solid $light-secondary-dark;
+  border-image-source: linear-gradient(to right, $light-secondary-dark, transparent);
+  border-image-slice: 1;
+}
+
+.SearchInput.DarkMode {
+  color: $dark-secondary-light;
+  border-bottom: .1rem solid $dark-secondary-light;
+  border-image-source: linear-gradient(to right, $dark-secondary-light, transparent);
+}
+
+.SearchInput:focus {
+  outline: none;
+}
+

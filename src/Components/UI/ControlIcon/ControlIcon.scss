@@ -1,0 +1,19 @@
+@import '../../../variables.scss';
+
+.PlayIcon {
+  height:3.5rem;
+  cursor:pointer;
+  display: table-cell;
+  vertical-align: middle;
+  filter: $filter-light-secondary-dark;
+}
+
+.PlayIcon.DarkMode {
+  filter: $filter-dark-secondary-light;
+}
+
+.PlayIcon:hover {
+  filter: $filter-highlight;
+}
+
+

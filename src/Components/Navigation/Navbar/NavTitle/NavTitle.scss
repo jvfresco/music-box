@@ -1,0 +1,30 @@
+@import '../../../../variables.scss';
+@import '../../../../mixings.scss';
+
+// .NavTitle {
+//   text-align: center;
+//   position: relative;
+//   max-width: 100rem;
+//   margin: auto;
+// }
+
+.TitleText {
+  color: $light-secondary-dark;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.TitleText.DarkMode {
+  color: $dark-secondary-light;
+}
+
+@include respond(phone){
+  .TitleText {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+

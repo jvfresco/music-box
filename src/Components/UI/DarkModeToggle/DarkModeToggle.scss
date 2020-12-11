@@ -1,0 +1,43 @@
+@import '../../../mixings.scss';
+@import '../../../variables.scss';
+
+.ToggleContainer {
+  margin-right: 1.5rem;
+}
+
+.CheckToggle {
+  display: none;
+}
+
+.ToggleTheme {
+  cursor: pointer;
+}
+
+.ToggleThemeText {
+  display: none;
+  margin: 1.25rem 0;
+  font-size: 2rem;
+  color: $light-secondary-dark;
+  &.DarkMode {
+    color: $dark-secondary-light;
+  }
+}
+
+
+.ToggleThemeIcon {
+  height: 4rem;
+  filter: $filter-light-secondary-dark;
+
+  &.DarkMode {
+    filter: $filter-dark-secondary-light;
+  }
+}
+
+@include respond(phone){
+  .ToggleThemeIcon {
+    display: none;
+  }
+  .ToggleThemeText {
+    display: block;
+  }
+}

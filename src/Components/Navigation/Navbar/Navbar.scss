@@ -1,0 +1,31 @@
+@import '../../../variables.scss'; 
+@import '../../../mixings.scss';
+
+.Navbar {
+  position: fixed;
+  background-color: $light-primary;
+  height: 8rem;
+  width: 100%;
+  z-index:1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Navbar.DarkMode {
+  background-color: $dark-primary;
+}
+
+.SearchTitle {
+  width: 55%;
+}
+
+@include respond(phone) {
+
+  .DesktopOnly {
+    display: none;
+  }
+  .SearchTitle {
+    width: 90%;
+    margin-left: 2rem;
+  }
+}

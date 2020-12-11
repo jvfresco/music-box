@@ -1,0 +1,44 @@
+@import '../../../variables.scss';
+
+.Button {
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.Primary {
+  background-image: linear-gradient($light-primary-dark-2, $light-primary-dark 60%, $light-primary);
+  background-repeat: no-repeat;
+  background-color: $light-primary;
+  border: 1px solid $light-secondary;
+  color: $light-secondary-dark;
+}
+
+.Primary:hover {
+  border: 1px solid $light-secondary-dark;
+}
+
+.Primary.DarkMode {
+  background-image: linear-gradient($dark-primary-light-2, $dark-primary-light 60%, $dark-primary);
+  background-color: $dark-primary;
+  border: 1px solid $dark-secondary;
+  color: $dark-secondary-light;
+}
+
+.Primary.DarkMode:hover {
+  border: 1px solid $dark-secondary-light;
+}
+
+.Secondary {
+  background-image: linear-gradient(white, #e9ecef 60%, #dde2e6);
+  border: 1px solid white;
+  background-repeat: no-repeat;
+  color: #495057;
+  margin-right: 1rem;
+}
+
+.Secondary:hover {
+  border: 1px solid #cbcfcb;
+}
